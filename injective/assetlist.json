@@ -737,7 +737,7 @@
           }
         }
       ],
-      "type_asset": "sdk.coin"
+      "type_asset": "cw20"
     },
     {
       "description": "A receipt token for lent TIA issued by the Neptune Protocol.",
@@ -1234,7 +1234,7 @@
           }
         }
       ],
-      "type_asset": "sdk.coin"
+      "type_asset": "cw20"
     },
     {
       "description": "Bridge Solana on Injective chain via Wormhole gateway IBC channel",
@@ -1303,7 +1303,7 @@
           }
         }
       ],
-      "type_asset": "sdk.coin"
+      "type_asset": "cw20"
     },
   {
       "description": "The native governance and staking token for the Neptune Finance protocol",
@@ -1332,6 +1332,80 @@
       "socials": {
         "website": "https://nept.finance/",
         "twitter": "https://x.com/neptune_finance"
+      },
+      "type_asset": "sdk.coin"
+    },
+    {
+      "description": "Factory wrapped variant of the CW20 nUSDT, the receipt token for lent USDT on Neptune Finance",
+      "denom_units": [
+        {
+          "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDT",
+          "exponent": 6
+        }
+      ],
+      "base": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
+      "name": "Factory Wrapped Neptune Receipt nUSDT",
+      "display": "nUSDT",
+      "symbol": "nUSDT",
+        "traces": [
+        {
+          "type": "Factory-Wrap",
+          "counterparty": {
+            "chain_name": "injective",
+            "base_denom": "inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s"
+          },
+          "provider": "CW20-Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdt.png",
+          "theme": {
+            "primary_color_hex": "#54ac94"
+          }
+        }
+      ],
+      },
+      "type_asset": "sdk.coin"
+    },
+    {
+      "description": "Factory wrapped variant of the CW20 nUSDC, the receipt token for lent USDC on Neptune Finance",
+      "denom_units": [
+        {
+          "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDC",
+          "exponent": 6
+        }
+      ],
+      "base": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz",
+      "name": "Factory Wrapped Neptune Receipt nUSDC",
+      "display": "nUSDC",
+      "symbol": "nUSDC",
+        "traces": [
+        {
+          "type": "Factory-Wrap",
+          "counterparty": {
+            "chain_name": "injective",
+            "base_denom": "inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz"
+          },
+          "provider": "CW20-Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdc.png",
+          "theme": {
+            "primary_color_hex": "#2775ca"
+          }
+        }
+      ],
       },
       "type_asset": "sdk.coin"
     }
