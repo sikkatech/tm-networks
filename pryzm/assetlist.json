@@ -4006,6 +4006,94 @@
         }
       ],
       "type_asset": "sdk.coin"
+    },
+     {
+      "description": "IBC Factory Wrapped nUSDC, the lending receipt token for USDC on Neptune Finance, on Pryzm chain",
+      "denom_units": [
+        {
+          "denom": "ibc/9924F230D93D88A98D1469A24E523D7BF58935E6321C18CFAEFBFC068B54676F",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDC",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/9924F230D93D88A98D1469A24E523D7BF58935E6321C18CFAEFBFC068B54676F",
+      "name": "Factory Wrapped Neptune Receipt nUSDC",
+      "display": "nUSDC",
+      "symbol": "nUSDC",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "injective",
+            "base_denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz",
+            "channel_id": "channel-284"
+          },
+          "chain": {
+            "channel_id": "channel-1",
+            "path": "transfer/channel-1/factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz"
+          }
+        }
+      ],
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "injective",
+            "base_denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nUSDC.png",
+          "theme": {
+            "primary_color_hex": "#2775ca"
+          }
+        }
+      ],
+      "type_asset": "ics20"
+    },
+    {
+      "description": "IBC Factory Wrapped nUSDT, the lending receipt token for USDT on Neptune Finance, on Pryzm chain",
+      "denom_units": [
+        {
+          "denom": "ibc/018AC5A86B24C7FCE5BAF37B50F47028A8BA791F64233773531EE10F97CBA225",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/018AC5A86B24C7FCE5BAF37B50F47028A8BA791F64233773531EE10F97CBA225",
+      "name": "Factory Wrapped Neptune Receipt nUSDT",
+      "display": "nUSDT",
+      "symbol": "nUSDT",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "injective",
+            "base_denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
+            "channel_id": "channel-284"
+          },
+          "chain": {
+            "channel_id": "channel-1",
+            "path": "transfer/channel-1/factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s"
+          }
+        }
+      ],
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "injective",
+            "base_denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nUSDT.png",
+          "theme": {
+            "primary_color_hex": "#54ac94"
+          }
+        }
+      ],
+      "type_asset": "ics20"
     }
   ]
 }
